@@ -1,4 +1,4 @@
-package cloud.autotests.docs;
+package com.alexstark.docs;
 
 import com.codeborne.selenide.*;
 import org.openqa.selenium.Keys;
@@ -15,7 +15,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 /*
     Selenide commands examples
-    Author: https://github.com/vinogradoff
     this is not a full list, just the most common
  */
 
@@ -114,7 +113,7 @@ public class SelenideSnippets {
 
         //longer timeouts
         $("").shouldBe(visible, Duration.ofSeconds(30));
-        $("").waitUntil(visible, 30000);  //is deprecated
+//        $("").waitUntil(visible, 30000);  //is deprecated
 
     }
 

@@ -1,4 +1,4 @@
-package cloud.autotests.docs;
+package com.alexstark.docs;
 
 import org.openqa.selenium.By;
 
@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.$x;
 
 /*
     Locators examples
-    Author: https://github.com/svasenkov
  */
 
 public class CssXpathExamples {

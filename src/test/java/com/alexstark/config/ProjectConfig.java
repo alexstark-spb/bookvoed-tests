@@ -1,4 +1,4 @@
-package cloud.autotests.config;
+package com.alexstark.config;
 
 import org.aeonbits.owner.Config;
 

@@ -1,4 +1,4 @@
-package cloud.autotests.config.demowebshop;
+package com.alexstark.config.demowebshop;
 
 import org.aeonbits.owner.ConfigFactory;
 

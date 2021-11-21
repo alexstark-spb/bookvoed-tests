@@ -1,10 +1,9 @@
-package cloud.autotests.docs;
+package com.alexstark.docs;
 
 import org.junit.jupiter.api.*;
 
 /*
     JUnit5 annotations examples
-    Author: https://github.com/dtuchs
  */
 
 @Tag("junit5")

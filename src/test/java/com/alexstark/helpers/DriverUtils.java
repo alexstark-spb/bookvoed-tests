@@ -1,6 +1,6 @@
-package cloud.autotests.helpers;
+package com.alexstark.helpers;
 
-import cloud.autotests.config.Project;
+import com.alexstark.config.Project;
 import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
