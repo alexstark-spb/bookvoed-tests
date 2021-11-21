@@ -28,7 +28,8 @@ public class BookvoedTest extends TestBase {
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
     @DisplayName("Авторизация с корректными данными")
     @Tag("Authorization")
-    @Disabled //UI-тест который не пройдет из-за появления капчи
+    @Description("Данный UI-тест падает из-за появления капчи, при запуске на удаленном сервере")
+    @Disabled()
     void authorization() {
         authorizationPage
                 .openPage()
