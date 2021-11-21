@@ -68,7 +68,7 @@ public class BookvoedTest extends TestBase {
             "Над пропастью во ржи, 200"
 
     })
-    @ParameterizedTest(name = "Поиск товара : '{0}' и применение фильтрации по цене")
+    @ParameterizedTest(name = "Поиск товара : {0} и применение фильтрации по цене")
     @Tag("SearchAndCatalog")
     void findProductInSearch(String product, String price) {
         searchPage.openPage();
@@ -205,7 +205,7 @@ public class BookvoedTest extends TestBase {
     @DisplayName("Переход между вкладками на тапбаре главной страницы")
     @Tag("MainPage")
     @EnumSource(value = MenuItem.class)
-    @ParameterizedTest(name = "Переход между вкладками на тапбаре. Открыть вкладку : '{0}'")
+    @ParameterizedTest(name = "Переход между вкладками на тапбаре. Открыть вкладку : {0}")
     void openTabs(MenuItem menuItem) {
         mainPage.openPage();
         if (mainPage.checkDisplayedRegion()) {
