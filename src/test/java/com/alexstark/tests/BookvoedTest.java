@@ -11,8 +11,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.EnumSource;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 public class BookvoedTest extends TestBase {
 
     private AuthorizationPage authorizationPage = new AuthorizationPage();
@@ -23,6 +21,7 @@ public class BookvoedTest extends TestBase {
 
     @Test
     @Feature("Authorization")
+    @AllureId("5900")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
@@ -42,10 +41,11 @@ public class BookvoedTest extends TestBase {
 
     @Test
     @Feature("Authorization")
+    @AllureId("5901")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
-    @DisplayName("Авторизация с некорректными данными")
+    @DisplayName("Авторизация с некорректными полями Email и Password")
     @Tag("Authorization")
     void authorizationWithIncorrectData() {
         authorizationPage
@@ -58,6 +58,7 @@ public class BookvoedTest extends TestBase {
     }
 
     @Feature("Search")
+    @AllureId("5911")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
@@ -87,6 +88,7 @@ public class BookvoedTest extends TestBase {
 
     @Test
     @Feature("Catalog")
+    @AllureId("5908")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
 
@@ -116,6 +118,7 @@ public class BookvoedTest extends TestBase {
 
     @Test
     @Feature("Cart")
+    @AllureId("5903")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
@@ -144,6 +147,7 @@ public class BookvoedTest extends TestBase {
 
     @Test
     @Feature("Cart")
+    @AllureId("5904")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
@@ -168,6 +172,7 @@ public class BookvoedTest extends TestBase {
 
     @Test
     @Feature("Cart")
+    @AllureId("5905")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
@@ -195,6 +200,7 @@ public class BookvoedTest extends TestBase {
     }
 
     @Feature("MainPage")
+    @AllureId("5909")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
@@ -217,6 +223,7 @@ public class BookvoedTest extends TestBase {
 
     @Test
     @Feature("Shops")
+    @AllureId("5913")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.NORMAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
