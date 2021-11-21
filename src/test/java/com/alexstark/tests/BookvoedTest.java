@@ -58,7 +58,6 @@ public class BookvoedTest extends TestBase {
     }
 
     @Feature("Search")
-    @AllureId("5911")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
@@ -69,7 +68,7 @@ public class BookvoedTest extends TestBase {
             "Над пропастью во ржи, 200"
 
     })
-    @ParameterizedTest(name = "Найти товар : {0}")
+    @ParameterizedTest(name = "Поиск товара : '{0}' и применение фильтрации по цене")
     @Tag("SearchAndCatalog")
     void findProductInSearch(String product, String price) {
         searchPage.openPage();
@@ -200,14 +199,13 @@ public class BookvoedTest extends TestBase {
     }
 
     @Feature("MainPage")
-    @AllureId("5909")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
     @DisplayName("Переход между вкладками на тапбаре главной страницы")
     @Tag("MainPage")
     @EnumSource(value = MenuItem.class)
-    @ParameterizedTest(name = "Открыть вкладку : {0}")
+    @ParameterizedTest(name = "Переход между вкладками на тапбаре. Открыть вкладку : '{0}'")
     void openTabs(MenuItem menuItem) {
         mainPage.openPage();
         if (mainPage.checkDisplayedRegion()) {
