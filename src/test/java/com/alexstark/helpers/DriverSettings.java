@@ -18,19 +18,20 @@ public class DriverSettings {
 
         String login = credentials.login();
         String password = credentials.password();
-        String browserURL = System.getProperty("url", credentials.browserURL());
+        String remoteURL = System.getProperty("remoteUrl");
         String browserName = System.getProperty("browserName", "chrome");
         String browserSize = System.getProperty("browserSize", "1600x900");
         String browserVersion = System.getProperty("browserVersion");
-        String remoteDriverUrl = System.getProperty("remoteDriverUrl",
-                format("https://%s:%s@%s", login, password, browserURL));
 
+        Configuration.browserCapabilities = capabilities;
         Configuration.browser = browserName;
         Configuration.browserSize = browserSize;
         Configuration.browserVersion = browserVersion;
-        Configuration.browserCapabilities = capabilities;
         Configuration.pageLoadStrategy = "eager";
         Configuration.baseUrl = "https://www.bookvoed.ru";
-        Configuration.remote = remoteDriverUrl;
+
+        if (System.getProperty("remoteUrl") != null) {
+            Configuration.remote = format("https://%s:%s@%s", login, password, remoteURL);
+        }
     }
 }
