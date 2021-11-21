@@ -66,7 +66,6 @@ public class MainPage {
 
     @Step("Проверить что на странице появились адреса магазинов")
     public void checkListShops() {
-
         checkListShops.shouldBe(visible);
     }
 }

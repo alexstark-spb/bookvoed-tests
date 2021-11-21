@@ -11,7 +11,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.EnumSource;
 
-
 public class BookvoedTest extends TestBase {
 
     private AuthorizationPage authorizationPage = new AuthorizationPage();
@@ -19,7 +18,6 @@ public class BookvoedTest extends TestBase {
     private CartPage cartPage = new CartPage();
     private CatalogPage catalogPage = new CatalogPage();
     private MainPage mainPage = new MainPage();
-
 
     @Test
     @Feature("Authorization")

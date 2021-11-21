@@ -2,7 +2,6 @@ package com.alexstark.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-
 import java.time.Duration;
 
 import static com.alexstark.helpers.TestData.*;
@@ -68,7 +67,6 @@ public class AuthorizationPage {
 
     @Step("Проверить имя авторизованного пользователя")
     public void checkProfileName() {
-
         checkProfileName.shouldHave(text(profileName), Duration.ofSeconds(10));
     }
 }

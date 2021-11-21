@@ -8,16 +8,13 @@ public enum MenuItem {
     HELLOFROMPETERSBURG("Привет из Петербурга"),
     SALES("Акции");
 
-
     private String description;
 
     MenuItem(String description) {
-
         this.description = description;
     }
 
     public String getDescription() {
-
         return description;
     }
 }

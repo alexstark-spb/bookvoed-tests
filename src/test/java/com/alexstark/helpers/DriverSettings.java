@@ -4,6 +4,7 @@ import com.alexstark.config.ProjectConfig;
 import com.codeborne.selenide.Configuration;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import static java.lang.String.format;
 
 public class DriverSettings {
 
@@ -21,6 +22,8 @@ public class DriverSettings {
         String browserName = System.getProperty("browserName", "chrome");
         String browserSize = System.getProperty("browserSize", "1600x900");
         String browserVersion = System.getProperty("browserVersion");
+        String remoteDriverUrl = System.getProperty("remoteDriverUrl",
+                format("https://%s:%s@%s", login, password, browserURL));
 
         Configuration.browser = browserName;
         Configuration.browserSize = browserSize;
@@ -28,7 +31,6 @@ public class DriverSettings {
         Configuration.browserCapabilities = capabilities;
         Configuration.pageLoadStrategy = "eager";
         Configuration.baseUrl = "https://www.bookvoed.ru";
-//        Configuration.remote = format("https://%s:%s@%s", login, password, browserURL);
-
+        Configuration.remote = remoteDriverUrl;
     }
 }

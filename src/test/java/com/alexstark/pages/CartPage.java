@@ -88,13 +88,11 @@ public class CartPage {
 
     @Step("Проверить что на странице есть текст 'Ваша корзина пуста.'")
     public void checkCartEmpty() {
-
         checkCartEmpty.shouldHave(text(textCartEmpty));
     }
 
     @Step("Проверить что на странице есть список с добавленными товарами")
     public void checkAreaGoods() {
-
         checkAreaGoods.shouldBe(visible);
     }
 }

@@ -1,5 +1,6 @@
 package com.alexstark.tests;
 
+import com.alexstark.helpers.DriverSettings;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.junit5.AllureJunit5;
@@ -9,7 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-import static com.alexstark.helpers.AllureAttachments.addVideo;
+import static com.alexstark.helpers.AllureAttachments.*;
 import static io.qameta.allure.Allure.step;
 
 @ExtendWith({AllureJunit5.class})

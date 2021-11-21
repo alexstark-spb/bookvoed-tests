@@ -2,7 +2,6 @@ package com.alexstark.docs;
 
 import com.codeborne.selenide.*;
 import org.openqa.selenium.Keys;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.time.Duration;
