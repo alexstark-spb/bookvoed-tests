@@ -1,6 +1,5 @@
 package com.alexstark.tests;
 
-import com.alexstark.helpers.DriverSettings;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.junit5.AllureJunit5;
