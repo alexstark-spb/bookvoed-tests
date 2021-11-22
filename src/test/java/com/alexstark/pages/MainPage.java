@@ -42,7 +42,7 @@ public class MainPage {
 
     @Step("Открыть вкладку на таб-баре")
     public MainPage openHeaderTabs(MenuItem menuItem) {
-        $$(".Qib a").find(Condition.text(menuItem.getDescription())).click();
+        $$(".Wib a").find(Condition.text(menuItem.getDescription())).click();
         return this;
     }
 
@@ -61,7 +61,7 @@ public class MainPage {
     @Step("Проверить что название вкладки совпадает с названием из класса 'MenuItem'")
     public void checkNameTab(MenuItem menuItem) {
 
-        $$(".Qib a").shouldHave(itemWithText(menuItem.getDescription()));
+        $$(".Wib a").shouldHave(itemWithText(menuItem.getDescription()));
     }
 
     @Step("Проверить что на странице появились адреса магазинов")
