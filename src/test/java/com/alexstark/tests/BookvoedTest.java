@@ -67,7 +67,7 @@ public class BookvoedTest extends TestBase {
             "Над пропастью во ржи, 200"
 
     })
-    @ParameterizedTest(name = "Поиск товара : {0}. Применение фильтрации по цене")
+    @ParameterizedTest(name = "Поиск товара : {0} {1}. Применение фильтрации по цене")
     @Tag("Search")
     void findProductInSearch(String product, String price) {
         searchPage.openPage();
