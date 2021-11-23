@@ -17,7 +17,7 @@ public class CatalogPage {
             checkPageTitle = $("#ml2_footer"),
             checkDisplayedPopUp = $("#cityDetect").$(".Fdb"),
             closePopUpRegion = $("#cityDetect").$(".Xw"),
-            typeCatalog = $(".Qib").$(byText(catalog)),
+            typeCatalog = $(".Wib").$(byText(catalog)),
             typeSubdirectory = $("#c_sidebar").$("#c_sidebar-catalog").$(byText(categoryName)),
             typeSubcategory = $(byText(category)).parent().$("ul li", 4).$("a"),
             typeFirstProduct = $("#retailrocket").$("ul li", 0),
