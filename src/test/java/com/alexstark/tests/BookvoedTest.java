@@ -61,6 +61,7 @@ public class BookvoedTest extends TestBase {
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
+    @DisplayName("Поиск товаров и применение фильтрации по цене")
     @CsvSource(value = {
             "451 градус по фаренгейту, 350",
             "Дюна, 200",
@@ -89,7 +90,6 @@ public class BookvoedTest extends TestBase {
     @AllureId("5908")
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
-
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
     @DisplayName("Переход по каталогу и открытие PDP-карточки товара")
     @Tag("Catalog")
@@ -204,7 +204,7 @@ public class BookvoedTest extends TestBase {
     @DisplayName("Переход между вкладками на тапбаре главной страницы")
     @Tag("MainPage")
     @EnumSource(value = MenuItem.class)
-    @ParameterizedTest(name = "Переход между вкладками на тапбаре. Открыть вкладку : {0}")
+    @ParameterizedTest(name = "Открыть на тапбаре вкладку : {0}")
     void openTabs(MenuItem menuItem) {
         mainPage.openPage();
         if (mainPage.checkDisplayedRegion()) {
