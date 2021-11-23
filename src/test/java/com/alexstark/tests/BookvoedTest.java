@@ -61,14 +61,13 @@ public class BookvoedTest extends TestBase {
     @Owner("Alexander Derevyanko")
     @Severity(SeverityLevel.CRITICAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
-    @DisplayName("Поиск товаров и применение фильтрации по цене")
     @CsvSource(value = {
             "451 градус по фаренгейту, 350",
             "Дюна, 200",
             "Над пропастью во ржи, 200"
 
     })
-    @ParameterizedTest(name = "Поиск товара : {0} и применение фильтрации по цене")
+    @ParameterizedTest(name = "Поиск товара : {0}. Применение фильтрации по цене")
     @Tag("SearchAndCatalog")
     void findProductInSearch(String product, String price) {
         searchPage.openPage();

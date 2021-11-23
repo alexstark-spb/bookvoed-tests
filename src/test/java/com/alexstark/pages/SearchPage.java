@@ -18,7 +18,7 @@ public class SearchPage {
             closePopUpRegion = $("#cityDetect").$(".Xw"),
             searchInput = $("#searchBar").$(".Qt input"),
             minPriceInput = $("#idFilterPrice-priceMin-input"),
-            checkTitlePage = $("#books .cE");
+            checkTitlePage = $("#books");
 
     @Step("Открыть страницу www.bookvoed.ru")
     public void openPage() {
