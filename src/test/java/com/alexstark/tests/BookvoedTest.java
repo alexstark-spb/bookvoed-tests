@@ -64,7 +64,6 @@ public class BookvoedTest extends TestBase {
     @DisplayName("Поиск товаров и применение фильтрации по цене")
     @CsvSource(value = {
             "451 градус по фаренгейту, 350",
-            "Дюна, 200",
             "Над пропастью во ржи, 200"
 
     })
