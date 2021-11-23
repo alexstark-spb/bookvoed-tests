@@ -19,7 +19,7 @@ public class CartPage {
             closePopUpRegion = $("#cityDetect").$(".Xw"),
             typeFirstProduct = $("#retailrocket").$("ul li", 0),
             typeCartButton = $("#book_buttons").$("[itemprop='offers']"),
-            typeCartButtonPLP = $("#books .JD .ks a"),
+            typeCartButtonPLP = $("#books .KD .ks a"),
             typeButton = $("#bottom_action-bac").$(byText(goToCartButton)),
             typeButtonClear = $("#order2").$(byText(clearCartButton)),
             checkNameCart = $("#CabMenu").$("ul li a"),
