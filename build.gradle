@@ -69,9 +69,15 @@ task authorization_tests(type: Test) {
     }
 }
 
-task searchandcatalog_tests(type: Test) {
+task search_tests(type: Test) {
     useJUnitPlatform {
-        includeTags "SearchAndCatalog"
+        includeTags "Search"
+    }
+}
+
+task catalog_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags "Catalog"
     }
 }
 
@@ -84,5 +90,11 @@ task cart_tests(type: Test) {
 task main_tests(type: Test) {
     useJUnitPlatform {
         includeTags "MainPage"
+    }
+}
+
+task shops_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags "Shops"
     }
 }

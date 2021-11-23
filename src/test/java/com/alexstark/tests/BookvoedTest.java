@@ -68,7 +68,7 @@ public class BookvoedTest extends TestBase {
 
     })
     @ParameterizedTest(name = "Поиск товара : {0}. Применение фильтрации по цене")
-    @Tag("SearchAndCatalog")
+    @Tag("Search")
     void findProductInSearch(String product, String price) {
         searchPage.openPage();
         if (searchPage.checkDisplayedRegion()) {
@@ -92,7 +92,7 @@ public class BookvoedTest extends TestBase {
 
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
     @DisplayName("Переход по каталогу и открытие PDP-карточки товара")
-    @Tag("SearchAndCatalog")
+    @Tag("Catalog")
     void openCatalogAndPDP() {
         catalogPage.openPage();
         if (catalogPage.checkDisplayedRegion()) {
@@ -225,7 +225,7 @@ public class BookvoedTest extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Link(name = "bookvoed", url = "https://www.bookvoed.ru/")
     @DisplayName("Просмотр списка магазинов")
-    @Tag("MainPage")
+    @Tag("Shops")
     void viewListOfStores() {
         mainPage.openPage();
         if (mainPage.checkDisplayedRegion()) {
