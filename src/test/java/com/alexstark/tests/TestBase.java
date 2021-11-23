@@ -26,7 +26,7 @@ public class TestBase extends DriverSettings {
     @BeforeEach
     public void setupBeforeEach() throws InterruptedException {
         if (System.getProperty("threads") != null) {
-            Thread.sleep(5_000);
+            Thread.sleep(10_000);
         }
     }
 
