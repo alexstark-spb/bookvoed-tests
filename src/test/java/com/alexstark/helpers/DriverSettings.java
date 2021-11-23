@@ -30,7 +30,7 @@ public class DriverSettings {
         Configuration.pageLoadStrategy = "eager";
         Configuration.baseUrl = "https://www.bookvoed.ru";
 
-        if ((System.getProperty("remoteUrl") != null) && (System.getProperty("remoteUrl") == "run_not_remote"))  {
+        if (System.getProperty("remoteUrl") != null) {
             Configuration.remote = format("https://%s:%s@%s", login, password, remoteURL);
         }
     }
