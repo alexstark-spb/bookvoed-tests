@@ -72,7 +72,7 @@ allure serve build/allure-results
 &nbsp;
 ## Интеграция с TMS Allure TestOps
 ### Пример автоматизированного тест кейса
-![Allure TestOps](https://user-images.githubusercontent.com/70107243/143317103-005fcca2-97d5-4f8b-b4e0-ae0fc886db2d.png)
+![Allure TestOps](https://user-images.githubusercontent.com/70107243/143319301-6cc24f46-0875-462f-b53e-bc84c7a086ab.png)
 
 ### Доска с аналитикой тестирования
 ![Allure TestOps Доска с аналитикой](https://user-images.githubusercontent.com/70107243/143317400-285697d5-2181-40fc-a8ee-c98c8675b51f.png)
