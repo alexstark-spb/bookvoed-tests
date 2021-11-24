@@ -65,11 +65,12 @@ public class BookvoedTest extends TestBase {
     @CsvSource(value = {
             "451 градус по фаренгейту, 350",
             "Над пропастью во ржи, 200"
-
     })
     @ParameterizedTest(name = "Поиск товара : {0}. Применение фильтрации по цене")
     @Tag("Search")
     void findProductInSearch(String product, String price) {
+        Allure.parameter("Поиск товара", product);
+        Allure.parameter("Фильтр по минимальной цене", price);
         searchPage.openPage();
         if (searchPage.checkDisplayedRegion()) {
             searchPage.closePopUpRegion()
@@ -205,6 +206,7 @@ public class BookvoedTest extends TestBase {
     @EnumSource(value = MenuItem.class)
     @ParameterizedTest(name = "Открыть на тапбаре вкладку : {0}")
     void openTabs(MenuItem menuItem) {
+        Allure.parameter("Открыть на тапбаре вкладку ",menuItem.getDescription());
         mainPage.openPage();
         if (mainPage.checkDisplayedRegion()) {
             mainPage.closePopUpRegion()
